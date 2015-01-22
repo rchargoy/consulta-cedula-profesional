@@ -10,6 +10,10 @@
 
 @interface ViewController : UIViewController
 
+@property (nonatomic, strong) IBOutlet UILabel *desins;
+@property (nonatomic, strong) IBOutlet UILabel *titulo;
+@property (nonatomic, strong) IBOutlet UILabel *idCedula;
+
+- (IBAction)fetchCedula;
 
 @end
-
