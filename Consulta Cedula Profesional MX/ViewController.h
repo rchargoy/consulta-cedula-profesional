@@ -14,6 +14,10 @@
 @property (nonatomic, strong) IBOutlet UILabel *titulo;
 @property (nonatomic, strong) IBOutlet UILabel *idCedula;
 
+@property (strong, nonatomic) IBOutlet UITextField *nombre;
+@property (strong, nonatomic) IBOutlet UITextField *ApPaterno;
+@property (strong, nonatomic) IBOutlet UITextField *ApMaterno;
+
 - (IBAction)fetchCedula;
 
 @end

@@ -43,7 +43,7 @@
                                     <rect key="frame" x="16" y="125" width="146" height="21"/>
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="87" width="146" height="21"/>
+                                    <rect key="frame" x="16" y="211" width="146" height="21"/>
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[idCedula]" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BBH-HJ-RDd">
@@ -55,7 +55,7 @@
                                     <rect key="frame" x="170" y="125" width="197" height="21"/>
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="92" y="87" width="269" height="21"/>
+                                    <rect key="frame" x="92" y="211" width="269" height="21"/>
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Profesión:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ujP-ce-atP">
@@ -67,7 +67,7 @@
                                     <rect key="frame" x="22" y="161" width="78" height="21"/>
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="110" width="78" height="21"/>
+                                    <rect key="frame" x="16" y="234" width="78" height="21"/>
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Institución:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="acb-zQ-QjE">
@@ -79,7 +79,7 @@
                                     <rect key="frame" x="16" y="219" width="84" height="21"/>
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="133" width="84" height="21"/>
+                                    <rect key="frame" x="16" y="257" width="84" height="21"/>
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[titulo]" lineBreakMode="wordWrap" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E3T-ti-8fc">
@@ -91,7 +91,7 @@
                                     <rect key="frame" x="108" y="160" width="276" height="21"/>
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="58" y="110" width="278" height="21"/>
+                                    <rect key="frame" x="58" y="234" width="303" height="21"/>
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[desins]" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ukf-zh-FTF">
@@ -103,7 +103,7 @@
                                     <rect key="frame" x="108" y="219" width="276" height="21"/>
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="58" y="133" width="278" height="21"/>
+                                    <rect key="frame" x="58" y="257" width="303" height="21"/>
                                 </variation>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="513-sN-idk">
@@ -115,12 +115,45 @@
                                     <rect key="frame" x="115" y="276" width="114" height="30"/>
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="92" y="162" width="114" height="30"/>
+                                    <rect key="frame" x="92" y="286" width="114" height="30"/>
                                 </variation>
                                 <connections>
                                     <action selector="fetchCedula" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZI8-nB-lWm"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nombre" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Emm-Q6-crf">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no" spellCheckingType="no" keyboardType="alphabet" keyboardAppearance="light"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="84" width="218" height="30"/>
+                                </variation>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="qUc-MK-GkJ"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Apellido Paterno" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="l1b-SM-0xS">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no" spellCheckingType="no" keyboardType="alphabet" keyboardAppearance="light"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="122" width="218" height="30"/>
+                                </variation>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="FxZ-H3-AWH"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Apellido Materno" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VD4-U4-f03">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no" spellCheckingType="no" keyboardType="alphabet" keyboardAppearance="light"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="160" width="218" height="30"/>
+                                </variation>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="NWG-fH-fbr"/>
+                                </connections>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -134,6 +167,9 @@
                                 <exclude reference="E3T-ti-8fc"/>
                                 <exclude reference="ukf-zh-FTF"/>
                                 <exclude reference="513-sN-idk"/>
+                                <exclude reference="Emm-Q6-crf"/>
+                                <exclude reference="l1b-SM-0xS"/>
+                                <exclude reference="VD4-U4-f03"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -149,10 +185,20 @@
                                 <include reference="513-sN-idk"/>
                             </mask>
                         </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="Emm-Q6-crf"/>
+                                <include reference="l1b-SM-0xS"/>
+                                <include reference="VD4-U4-f03"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
+                        <outlet property="ApMaterno" destination="VD4-U4-f03" id="0wm-ul-dbr"/>
+                        <outlet property="ApPaterno" destination="l1b-SM-0xS" id="WgB-x9-zSe"/>
                         <outlet property="desins" destination="ukf-zh-FTF" id="QtF-6f-fEw"/>
                         <outlet property="idCedula" destination="BBH-HJ-RDd" id="Daq-Uu-R8a"/>
+                        <outlet property="nombre" destination="Emm-Q6-crf" id="WTg-aA-ZiI"/>
                         <outlet property="titulo" destination="E3T-ti-8fc" id="Yls-qp-f6Y"/>
                     </connections>
                 </viewController>
